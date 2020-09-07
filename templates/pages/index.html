@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+{% block content %}
+
+<div class="card text-center">
+  <div class="card-body">
+    <h1>Welcome To Pollster</h1>
+    <p>Only an Admin can create a Poll</p>
+    <a class="btn btn-dark" href="{% url 'polls:index' %}">
+        View Available Polls</a>
+    <a class="btn btn-dark" href="{% url 'admin:index' %}">
+        Create Polls </a>
+  </div>
+  </div>
+{% endblock %}
